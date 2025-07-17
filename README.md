@@ -1,3 +1,4 @@
+@"
 # Local AI Chatbot 🚀
 
 A fully local, private ChatGPT-style chatbot running on your own PC.  
@@ -30,70 +31,45 @@ Built with open-source LLMs (Llama 3, Mixtral, Phi-3, and more) using [Ollama](h
 ```sh
 git clone https://github.com/your-github-username/chatbots.git
 cd chatbots
+
 2. Set up a Python virtual environment
-sh
-Copy
-Edit
+
 python -m venv venv
-Windows:
-
-sh
-Copy
-Edit
-.\venv\Scripts\activate
+Window
+.\venv\Scripts\activate 
 macOS/Linux:
+ venv/bin/activate
+3.Install Python requirements
+ pip install -r requirements.txt
 
-sh
-Copy
-Edit
-source venv/bin/activate
-3. Install Python requirements
-sh
-Copy
-Edit
-pip install -r requirements.txt
+
 4. Install and start Ollama
 Download Ollama here and install it.
 
 Start Ollama:
 
-On Windows: Open Ollama from the Start Menu
+Windows: Open Ollama from the Start Menu
 
-On macOS/Linux: Run in terminal:
+macOS/Linux: Run in terminal:
 
-sh
-Copy
-Edit
-ollama serve
+ ollama serve
 5. Pull a model (example: Llama 3)
-sh
-Copy
-Edit
-ollama pull llama3
+ ollama pull llama3
 You can also pull other models (pick one, or try them all!):
 
-ollama pull mixtral
-
-ollama pull phi3
-
-ollama pull gemma:2b
-
+ ollama pull mixtral
+ ollama pull phi3
+ ollama pull gemma:2b
 See all models here
 
 6. Check that your model is available
-sh
-Copy
-Edit
-ollama list
+ ollama list
 You should see the model(s) you pulled in the list.
+ Running the Chatbot
 
-Running the Chatbot
 Make sure your virtual environment is activated and Ollama is running.
-
-sh
-Copy
-Edit
-python app.py
+ python app.py
 Open your browser and go to http://localhost:7860
 
 Start chatting!
+
